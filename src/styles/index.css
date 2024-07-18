@@ -24,7 +24,6 @@
   width: 170px;
   height: 160px;
   border: 1px solid #f0f0f0;
-  padding: 20px;
   padding-bottom: 0;
 }
 .userContainer .nickname {
@@ -203,8 +202,7 @@ header {
   content: ">";
   right: 0;
 }
-.wrapper .move:last-child::after,
-.wrapper .move:first-child::before {
+.wrapper .move:last-child::after, .wrapper .move:first-child::before {
   position: absolute;
   font-size: 20px;
   padding: 0 7px 0px;
@@ -371,9 +369,7 @@ header {
   width: 100%;
   padding: 32px 125px 32px 60px;
   border-radius: 16px;
-  background: #1b2430
-    url("https://www.nhcapital.co.kr/resource/pc/image/main/notice_bg.png")
-    no-repeat right 270px top;
+  background: #1b2430 url("https://www.nhcapital.co.kr/resource/pc/image/main/notice_bg.png") no-repeat right 270px top;
   max-width: 1080px;
   margin: 0 auto;
   margin-bottom: 120px;
@@ -393,8 +389,7 @@ header {
 .link {
   width: 30px;
   height: 30px;
-  background: url("https://www.nhcapital.co.kr/resource/pc/image/main/btn_board_more.png")
-    no-repeat center;
+  background: url("https://www.nhcapital.co.kr/resource/pc/image/main/btn_board_more.png") no-repeat center;
   border-radius: 50%;
 }
 
@@ -821,7 +816,7 @@ header {
   top: 50%;
   right: 0;
   transform: translate(-50%, 0);
-  background-image: url("../assets/svgs/arrow.svg");
+  background-image: url("/Users/gim-yelim/Desktop/jejubus/src/assets/svgs/arrow.svg");
 }
 .login-userContainer .btn {
   color: #707070;
@@ -849,10 +844,10 @@ header {
   background-color: #fff;
   border: 1px solid #3b434d;
   border-radius: 5px;
+  -webkit-transform: translateX(-50%);
   -webkit-border-radius: 0.4em;
 }
-.login-userContainer .tooltip:hover div,
-.login-userContainer .tooltip:focus div {
+.login-userContainer .tooltip:hover div, .login-userContainer .tooltip:focus div {
   display: block;
 }
 
