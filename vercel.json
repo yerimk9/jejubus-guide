@@ -30,7 +30,7 @@
         {
           "type": "query",
           "key": "keyword",
-          "value": "busStop"
+          "value": "bus_station"
         }
       ],
       "destination": "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
