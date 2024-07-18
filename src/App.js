@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainPage from "./pages/MainPage";
 import RouteSearchPage from "./pages/RouteSearchPage";
 import PathSearchPage from "./pages/PathSearchPage";
@@ -16,24 +16,25 @@ import FindPasswordPage from "./pages/FindPasswordPage";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/routeSearch" element={<RouteSearchPage />} />
-        <Route path="/pathSearch" element={<PathSearchPage />} />
+        <Route path={"/"} element={<MainPage />} />
+        <Route path={"/routeSearch"} element={<RouteSearchPage />} />
+        <Route path={"/pathSearch"} element={<PathSearchPage />} />
         <Route path="/busStop" element={<BusStopPage />} />
         <Route path="/busStopDetail" element={<BusStopDetailPage />} />
         <Route path="/busRouteDetail" element={<BusRouteDetailPage />} />
-        <Route path="/nearByStation" element={<NearbyStationPage />} />
-        <Route path="/busSchedule" element={<BusSchedulePage />} />
-        <Route path="/notice" element={<NoticePage />} />
-        <Route path="/notice/:noticeId" element={<NoticeDetailPage />} />
-        <Route path="/review" element={<ReviewPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/signup" element={<SignupPage />} />
-        <Route path="/findPassword" element={<FindPasswordPage />} />
+        <Route path={"/nearByStation"} element={<NearbyStationPage />} />
+        <Route path={"/busSchedule"} element={<BusSchedulePage />} />
+        <Route path={"/notice"} element={<NoticePage />} />
+        <Route path={"/notice/:noticeId"} element={<NoticeDetailPage />} />
+        <Route path={"/review"} element={<ReviewPage />} />
+        <Route path={"/login"} element={<LoginPage />} />
+        <Route path={"/signup"} element={<SignupPage />} />
+        <Route path={"/findPassword"} element={<FindPasswordPage />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
+
 export default App;
