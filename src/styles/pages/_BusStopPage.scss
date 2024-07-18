@@ -1,0 +1,33 @@
+.busStopItems {
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 20px;
+
+  .busStopItem {
+    @include flexSpaceBetween;
+    padding: 14px;
+    border-bottom: 0.5px solid $primary-color3;
+    position: relative;
+    font-weight: 500;
+  }
+  .busNum {
+    font-size: 16px;
+    color: $text-color2;
+    margin-left: 10px;
+  }
+
+  .removeHistory {
+    display: flex;
+  }
+
+  .removeBtn {
+    cursor: pointer;
+  }
+}
+
+.historyeditorBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}

@@ -1,0 +1,49 @@
+.CheckedBusRoute {
+  @include flexCol;
+  gap: 0.3rem;
+
+  padding: 16px 16px 16px 32px;
+  margin-top: -30px;
+  color: $text-color1;
+  position: relative;
+  z-index: 999;
+  background: $primary-color3;
+
+  .dirTipText {
+    color: $border-color1;
+    font-size: 14px;
+  }
+}
+
+.RouteStationList {
+  .operation {
+    margin-top: -25px;
+    padding: 35px 10px 10px 16px;
+    border: 1px solid $border-color1;
+
+    color: $primary-color2;
+    font-size: 16px;
+  }
+
+  .RouteStationItem {
+    font-size: 18px;
+    position: relative;
+    padding: 16px;
+    border-bottom: 1px solid $border-color1;
+  }
+}
+
+.realTiemBusContainer {
+  width: 95%;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  font-size: 14px;
+  color: $text-color1;
+  background-color: $primary-color3;
+  border-radius: 5px;
+  padding: 5px;
+  .realTiemBus {
+    width: 30px;
+  }
+}

@@ -1,0 +1,47 @@
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 150px;
+  font-size: 20px;
+}
+
+.userContainer {
+  @include flex(center, center, column);
+
+  font-size: 18px;
+  border-radius: 50%;
+
+  width: 170px;
+  height: 160px;
+
+  border: 1px solid $border-color2;
+  padding: 20px;
+  padding-bottom: 0;
+
+  .nickname {
+    font-size: 12px;
+  }
+}
+
+.btn {
+  padding: 0 15px;
+  line-height: 30px;
+  border: 1px solid $border-color5;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.rectBtn {
+  color: #fff;
+  background: $primary-color3;
+  padding: 12px 16px;
+
+  min-width: 160px;
+  width: auto;
+  border-radius: 5px;
+
+  margin: 50px 0;
+
+  font-size: 18px;
+  font-weight: 500;
+}

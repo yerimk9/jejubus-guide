@@ -1,0 +1,16 @@
+header {
+  @include flexBetween;
+
+  padding: 10px 20px;
+  height: 72px;
+  width: 100%;
+  font-weight: 700;
+
+  border-bottom: 1px solid $border-color1;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $text-color1;
+  z-index: 10000;
+}

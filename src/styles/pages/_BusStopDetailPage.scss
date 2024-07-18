@@ -1,0 +1,69 @@
+.CheckedBusStop {
+  @include flexCol;
+  gap: 0.3rem;
+
+  padding: 16px 16px 16px 32px;
+  margin-top: -30px;
+  color: $text-color1;
+  position: relative;
+  z-index: 999;
+  background: $primary-color3;
+}
+
+.busDetailItem {
+  @include flexSpaceBetween;
+
+  font-size: 18px;
+  position: relative;
+  padding: 8px 12px;
+  border-bottom: 1px solid $border-color1;
+
+  .routeNumber {
+    margin-bottom: 8px;
+    font-size: 22px;
+  }
+}
+
+.timeArrivalContainer {
+  @include flexCol;
+  gap: 0.5rem;
+  align-items: end;
+
+  .arrivalDirTip {
+    color: $primary-color3;
+    font-size: 18px;
+  }
+}
+
+.timeArrival {
+  @include flexitems;
+  gap: 0.5rem;
+
+  .time {
+    color: $primary-color1;
+  }
+
+  .prevStaion {
+    border: 1px solid $primary-color3;
+    padding: 2px 6px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+}
+
+.dirTipText {
+  font-size: 18px;
+  line-height: 1.6;
+  color: $text-color2;
+}
+
+.noArrivalInfo {
+  @include flex(center, center, column);
+  border: 1px solid $border-color1;
+  border-width: 0px 1px 1px 1px;
+  padding: 100px 0;
+
+  h1 {
+    font-size: 28px;
+  }
+}

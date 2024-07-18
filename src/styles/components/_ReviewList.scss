@@ -1,0 +1,62 @@
+.reviewList-container {
+  max-width: 1080px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid #f0f0f0;
+  padding: 20px;
+  margin-top: 60px;
+
+  .review-item {
+    display: flex;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 30px;
+  }
+
+  .userContainer {
+    gap: 1.1rem;
+
+    .nickname {
+      font-size: 12px;
+    }
+  }
+
+  .reviewContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 16px;
+  }
+
+  .btnContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .rectBtn {
+    padding: 5px 20px;
+    min-width: auto;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .deleteBtn {
+    background-color: $primary-color2;
+  }
+
+  .content {
+    min-height: 100px;
+    @include flexCol;
+    margin-left: 24px;
+
+    p:nth-of-type(1) {
+      font-size: 14px;
+      color: $text-color4;
+      align-self: flex-end;
+    }
+  }
+}

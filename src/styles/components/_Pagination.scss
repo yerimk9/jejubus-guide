@@ -1,0 +1,81 @@
+.wrapper {
+  @include flex;
+  margin-top: 30px;
+  font-size: 14px;
+
+  a {
+    height: 25px;
+    line-height: 25px;
+  }
+
+  .page {
+    margin: 0 5px;
+    cursor: pointer;
+    width: 25px;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 0);
+    text-align: center;
+
+    &:hover {
+      background-color: #1e4066;
+      color: #fff;
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      float: left;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .move {
+    position: relative;
+    cursor: pointer;
+    margin: 0 10px;
+
+    &:first-child {
+      text-align: right;
+    }
+    &:first-child::before {
+      content: "<";
+      left: 0;
+    }
+    &:last-child::after {
+      content: ">";
+      right: 0;
+    }
+    &:last-child::after,
+    &:first-child::before {
+      position: absolute;
+      font-size: 20px;
+      padding: 0 7px 0px;
+    }
+
+    a {
+      width: 50px;
+      display: block;
+      z-index: 10;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .visible {
+    visibility: hidden;
+  }
+
+  .active {
+    background-color: #1e4066;
+    color: #fff;
+    border-radius: 5px;
+
+    @include flexCenter;
+  }
+}

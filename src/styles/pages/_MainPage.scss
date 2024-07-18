@@ -1,0 +1,83 @@
+.wrap1-head {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 76px;
+  margin-top: 72px;
+
+  @include flexCol;
+  gap: 16px;
+}
+.wrap-1 {
+  display: grid;
+  grid-template-areas:
+    "link1 link2 link3"
+    "link1 link4 link5";
+  gap: 45px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 76px 0 100px;
+}
+
+.wrap-2 {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 76px 10px 100px;
+}
+
+.wrap-3 {
+  width: 100%;
+  padding: 32px 125px 32px 60px;
+  border-radius: 16px;
+  background: #1b2430
+    url("https://www.nhcapital.co.kr/resource/pc/image/main/notice_bg.png")
+    no-repeat right 270px top;
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  font-size: 24px;
+  font-weight: bold;
+
+  .reviewBtn {
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    padding: 18px;
+    font-size: 16px;
+    border-radius: 6px;
+    background: $bg-color3;
+  }
+}
+
+.link {
+  width: 30px;
+  height: 30px;
+  background: url("https://www.nhcapital.co.kr/resource/pc/image/main/btn_board_more.png")
+    no-repeat center;
+  border-radius: 50%;
+}
+
+@media all and (max-width: 1023px) {
+  .wrap1-head {
+    margin: 72px 30px 0;
+  }
+  .wrap-1 {
+    grid-template-areas:
+      "link1 link1"
+      "link2 link3"
+      "link4 link5";
+    padding: 76px 30px 100px;
+  }
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width: 500px) {
+  .wrap-3 {
+    padding: 32px 25px;
+    font-size: 20px;
+
+    .reviewBtn {
+      padding: 12px;
+      font-size: 12px;
+    }
+  }
+}

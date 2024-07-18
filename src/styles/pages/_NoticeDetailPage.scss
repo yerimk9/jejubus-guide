@@ -1,0 +1,49 @@
+.notice-detail-container {
+  font-size: 16px;
+  line-height: 1.6;
+  border-top: 1px solid $border-color4;
+  margin-top: 52px;
+
+  .notice-head {
+    @include flexSpaceBetween;
+    padding-top: 0px !important;
+    padding: 26px 40px 30px;
+
+    .notice-title {
+      font-size: 21px !important;
+      line-height: 1.6;
+      letter-spacing: -0.3px;
+      color: $border-color4;
+    }
+    .notice-date {
+      font-size: 16px !important;
+      color: #303030 !important;
+      padding-top: 40px !important;
+    }
+  }
+
+  .notice-body {
+    padding: 50px 40px;
+    min-height: 500px;
+    border-top: 1px solid $bg-color2;
+    border-bottom: 1px solid $bg-color2;
+  }
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width: 590px) {
+  .notice-detail-container {
+    .notice-head {
+      padding: 26px 20px 20px;
+
+      .notice-title {
+        font-size: 18px !important;
+        padding-top: 20px !important;
+      }
+      .notice-date {
+        font-size: 14px !important;
+        padding-top: 20px !important;
+      }
+    }
+  }
+}

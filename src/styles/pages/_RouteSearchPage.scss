@@ -1,0 +1,26 @@
+.routeItems {
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 20px;
+
+  .routeItem {
+    @include flexSpaceBetween;
+    padding: 14px;
+    border-bottom: 0.5px solid $primary-color3;
+    position: relative;
+    font-weight: 500;
+  }
+  .dirTip {
+    font-size: 14px;
+    color: $text-color2;
+  }
+
+  .removeHistory {
+    display: flex;
+  }
+
+  .removeBtn {
+    cursor: pointer;
+  }
+}

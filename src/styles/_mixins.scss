@@ -1,0 +1,44 @@
+@mixin flexSpaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flexSpaceAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flexitems {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin wrapReverse {
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+
+@mixin flex($justify: center, $align: center, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
