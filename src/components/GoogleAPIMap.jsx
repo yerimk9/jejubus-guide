@@ -40,7 +40,7 @@ function GoogleAPIMap() {
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(onSuccess, onError);
-  }, []);
+  }, [onSuccess]);
 
   if (loading) {
     return <Loading />;
