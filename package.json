@@ -1,5 +1,4 @@
 {
-  "homepage": "https://yerimk9.github.io/jejubus-guide",
   "name": "jejubus",
   "version": "0.1.0",
   "private": true,
@@ -12,7 +11,6 @@
     "@testing-library/user-event": "^13.5.0",
     "@vis.gl/react-google-maps": "^1.1.0",
     "firebase": "^10.12.3",
-    "gh-pages": "^6.1.1",
     "gsap": "^3.12.5",
     "http-proxy-middleware": "^3.0.0",
     "lodash": "^4.17.21",
@@ -31,9 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "gh-pages-clean": "rimraf node_modules/.cache/gh-pages"
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
