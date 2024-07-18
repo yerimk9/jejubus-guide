@@ -9,16 +9,16 @@ module.exports = function (app) {
     })
   );
   app.use(
-    "/api2", // 프록시가 필요한 경로
+    "/api2",
     createProxyMiddleware({
-      target: "http://bus.jeju.go.kr", // 타겟 API 서버의 기본 URL
+      target: "http://bus.jeju.go.kr",
       changeOrigin: true,
     })
   );
   app.use(
-    "/googleMap", // 프록시가 필요한 경로
+    "/googleMap",
     createProxyMiddleware({
-      target: "https://maps.googleapis.com", // 타겟 API 서버의 기본 URL
+      target: "https://maps.googleapis.com",
       changeOrigin: true,
       secure: false,
     })

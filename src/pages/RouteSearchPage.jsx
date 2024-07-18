@@ -52,16 +52,15 @@ function RouteSearchPage(props) {
       const existingHistory =
         JSON.parse(localStorage.getItem("routeSearchHistory")) || [];
 
-      // 복제본 생성
       const updatedHistory = [...existingHistory];
       // 해당 인덱스의 아이템 삭제
       updatedHistory.splice(index, 1);
-      // 로컬 스토리지 업데이트
+
       localStorage.setItem(
         "routeSearchHistory",
         JSON.stringify(updatedHistory)
       );
-      // 상태 업데이트
+
       setHistoryItems(updatedHistory);
     }
 
@@ -99,7 +98,7 @@ function RouteSearchPage(props) {
         {filteredAllRoute && filteredAllRoute.length > 0
           ? filteredAllRoute.map((item, idx) => (
               <Link
-                to={"/busRouteDetail"} // 링크 URL 설정 필요
+                to={"/busRouteDetail"}
                 className="routeItem"
                 key={idx}
                 onClick={() => handleRouteInfo(item)}

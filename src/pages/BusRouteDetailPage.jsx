@@ -98,12 +98,7 @@ function BusRouteDetailPage(props) {
                     busInfo["CURR_STATION_NM"] === item["STATION_NM"] &&
                     busInfo["CURR_STATION_ID"] === item["STATION_ID"] ? (
                       <div className={"realTiemBusContainer"} key={idx}>
-                        {/* <img
-                          src={bus}
-                          alt="realTimeBus"
-                          className={realTiemBus}
-                        /> */}
-                        {/* <p>⬇️</p> */}
+                        <p>⬇️</p>
                         <p>{busInfo["PLATE_NO"]}</p>
                       </div>
                     ) : null

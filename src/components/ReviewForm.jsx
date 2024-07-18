@@ -1,4 +1,3 @@
-// ReviewForm.jsx
 import React, { useEffect, useState } from "react";
 import { auth, firestore } from "../firebase";
 import { onAuthStateChanged } from "firebase/auth";

@@ -16,15 +16,12 @@ function FindPasswordPage(props) {
         .get();
 
       if (!querySnapshot.empty) {
-        // 이메일이 존재할 때
         await sendPasswordResetEmail(auth, emailRef.current.value);
         alert("이메일을 확인해 주세요!");
       } else {
-        // 이메일이 존재하지 않을 때
         alert("등록되지 않은 이메일입니다.");
       }
     } catch (error) {
-      // Firebase 오류 처리
       console.error("Error finding password: ", error);
       alert("오류가 발생했습니다. 다시 시도해 주세요.");
     }

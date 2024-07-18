@@ -1,4 +1,3 @@
-// ReviewList.jsx
 import React, { useEffect, useState } from "react";
 import { auth, firestore } from "../firebase";
 import { deleteDoc, doc, onSnapshot, collection } from "firebase/firestore";

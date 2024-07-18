@@ -118,7 +118,7 @@ function BusStopPage(props) {
     }
 
     fetchData();
-  }, []); // 빈 배열을 전달하여 컴포넌트가 처음 렌더링될 때만 실행되도록 합니다.
+  }, []);
 
   useEffect(() => {
     const history = JSON.parse(localStorage.getItem("busStopSearchHistory"));

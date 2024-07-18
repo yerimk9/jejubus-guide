@@ -10,7 +10,6 @@ import {
 } from "firebase/auth";
 import { addDoc, collection, getDocs, query, where } from "firebase/firestore";
 import { firestore } from "../firebase";
-import googleLoginImg from "../assets/svgs/googleLogin.svg";
 
 function LoginPage() {
   const auth = getAuth();
@@ -29,13 +28,10 @@ function LoginPage() {
       const user = result.user; // 사용자의 정보가 user안에 들어온다.
       console.log(user);
 
-      // Check if user exists in Firestore
       const userRef = collection(firestore, "users");
       const querySnapshot = await getDocs(
         query(userRef, where("uid", "==", user.uid))
       );
-
-      // If user doesn't exist, add to Firestore
       if (querySnapshot.empty) {
         await addDoc(userRef, {
           uid: user.uid,
@@ -54,7 +50,7 @@ function LoginPage() {
         navigate("/");
       }
     });
-    return () => unsubscribe(); // 컴포넌트 언마운트 시 구독 해제
+    return () => unsubscribe();
   }, [auth, navigate]);
 
   const handleInputChange = (e) => {
@@ -66,7 +62,7 @@ function LoginPage() {
   };
 
   const handleLogin = async (e) => {
-    e.preventDefault(); // 폼 기본 동작 방지
+    e.preventDefault();
 
     try {
       await signInWithEmailAndPassword(auth, formData.email, formData.password);
@@ -90,12 +86,6 @@ function LoginPage() {
               구글 로그인
             </button>
           </div>
-          {/*  <div className="flex items-center">
-            <button onClick={login} className="googleBtn">
-              <img src={googleLoginImg} alt="googleBtn" />
-              구글 로그인
-            </button>
-          </div> */}
           <div className="border-[1px] ml-[30px] md:ml-0"></div>
           <form onSubmit={handleLogin}>
             <div>
