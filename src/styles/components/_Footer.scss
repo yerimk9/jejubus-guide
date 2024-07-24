@@ -1,0 +1,19 @@
+.footer-container {
+  background-color: $bg-color4;
+  color: $text-color5;
+  height: 100px;
+
+  .footer_info {
+    .info_logo {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 1rem;
+    font-size: 16px;
+  }
+}

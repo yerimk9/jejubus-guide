@@ -8,6 +8,7 @@ import pathSearchImg from "../assets/pngs/pathSearch.png";
 import routeImg from "../assets/pngs/route.png";
 import scheduleImg from "../assets/pngs/schedule.png";
 import { getNotice } from "../services/getNotice";
+import Footer from "../components/Footer";
 
 function MainPage(props) {
   const [noticeData, setNoticeData] = useState([]);
@@ -120,6 +121,8 @@ function MainPage(props) {
           </Link>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

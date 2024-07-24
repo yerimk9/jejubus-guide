@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import mock from "../data/mock.json";
 import BusScheduleLink from "../components/BusScheduleLInk";
+import Footer from "../components/Footer";
 
 export default function BusSchedulePage(props) {
   const [selectedBusType, setSelectedBusType] = useState("급행");

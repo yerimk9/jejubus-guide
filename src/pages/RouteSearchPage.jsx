@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 function RouteSearchPage(props) {
   const [allRoute, setAllRoute] = useState([]);

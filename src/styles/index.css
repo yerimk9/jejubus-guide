@@ -382,6 +382,24 @@ header {
   padding-left: 100px;
 }
 
+.footer-container {
+  background-color: #2c3139;
+  color: #7d8088;
+  height: 100px;
+}
+.footer-container .footer_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 1rem;
+  font-size: 16px;
+}
+.footer-container .footer_info .info_logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
 .wrap1-head {
   max-width: 1080px;
   margin: 0 auto;
