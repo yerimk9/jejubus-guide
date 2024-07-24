@@ -25,15 +25,8 @@
       "destination": "https://bus.jeju.go.kr/api/searchBusRouteStationList.do"
     },
     {
-      "source": "/googleMap",
-      "has": [
-        {
-          "type": "query",
-          "key": "keyword",
-          "value": "bus_station"
-        }
-      ],
-      "destination": "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
+      "source": "/googleMap/:path*",
+      "destination": "https://maps.googleapis.com/maps/api/:path*"
     }
   ]
 }
