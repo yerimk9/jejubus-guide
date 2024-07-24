@@ -7,7 +7,7 @@ export default function Loading() {
       <ClipLoader
         color="#1e4066"
         cssOverride={{
-          "border-width": "10px",
+          borderWidth: "10px",
         }}
         loading
         size={190}

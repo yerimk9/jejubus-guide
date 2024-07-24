@@ -202,8 +202,7 @@ header {
   content: ">";
   right: 0;
 }
-.wrapper .move:last-child::after,
-.wrapper .move:first-child::before {
+.wrapper .move:last-child::after, .wrapper .move:first-child::before {
   position: absolute;
   font-size: 20px;
   padding: 0 7px 0px;
@@ -341,6 +340,48 @@ header {
   align-self: flex-end;
 }
 
+.modal-container {
+  width: max-content;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.22);
+  padding: 30px;
+  border-radius: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-container .modal-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+}
+.modal-container .modal-intro div:nth-of-type(1) {
+  font-size: 20px;
+  font-weight: 600;
+}
+.modal-container .modalBtn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #117efc;
+  font-weight: 500;
+}
+.modal-container .modalBtn-container button {
+  padding: 10px;
+}
+.modal-container .modalBtn-container button:nth-of-type(1) {
+  border-right: 1px solid #ccc;
+  padding-right: 100px;
+}
+.modal-container .modalBtn-container button:nth-of-type(2) {
+  padding-left: 100px;
+}
+
 .wrap1-head {
   max-width: 1080px;
   margin: 0 auto;
@@ -370,9 +411,7 @@ header {
   width: 100%;
   padding: 32px 125px 32px 60px;
   border-radius: 16px;
-  background: #1b2430
-    url("https://www.nhcapital.co.kr/resource/pc/image/main/notice_bg.png")
-    no-repeat right 270px top;
+  background: #1b2430 url("https://www.nhcapital.co.kr/resource/pc/image/main/notice_bg.png") no-repeat right 270px top;
   max-width: 1080px;
   margin: 0 auto;
   margin-bottom: 120px;
@@ -392,8 +431,7 @@ header {
 .link {
   width: 30px;
   height: 30px;
-  background: url("https://www.nhcapital.co.kr/resource/pc/image/main/btn_board_more.png")
-    no-repeat center;
+  background: url("https://www.nhcapital.co.kr/resource/pc/image/main/btn_board_more.png") no-repeat center;
   border-radius: 50%;
 }
 
@@ -820,7 +858,7 @@ header {
   top: 50%;
   right: 0;
   transform: translate(-50%, 0);
-  background-image: url("../assets/svgs/arrow.svg");
+  background-image: url("/Users/gim-yelim/Desktop/jejubus/src/assets/svgs/arrow.svg");
 }
 .login-userContainer .btn {
   color: #707070;
@@ -851,8 +889,7 @@ header {
   -webkit-transform: translateX(-50%);
   -webkit-border-radius: 0.4em;
 }
-.login-userContainer .tooltip:hover div,
-.login-userContainer .tooltip:focus div {
+.login-userContainer .tooltip:hover div, .login-userContainer .tooltip:focus div {
   display: block;
 }
 
