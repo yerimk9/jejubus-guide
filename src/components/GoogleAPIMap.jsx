@@ -13,7 +13,7 @@ function GoogleAPIMap() {
   const fetchBusStops = async (location) => {
     try {
       const response = await fetch(
-        `/googleMap/maps/api/place/nearbysearch/json?location=${location.lat},${location.lng}&radius=2000&type=bus_station&key=${process.env.REACT_APP_GOOGLE_API_KEY}`
+        `/googleMap/place/nearbysearch/json?location=${location.lat},${location.lng}&radius=2000&type=bus_station&key=${process.env.REACT_APP_GOOGLE_API_KEY}`
       );
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
